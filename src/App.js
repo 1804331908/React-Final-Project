@@ -32,12 +32,12 @@ useEffect(() => {
       <Header onLogout={() => setIsLogin(false)} login={isLogin}/>
       {/* <PopChart2/> */}
     <Routes>
-    <Route path="/Addcategory" element={isLogin ? <AddCategory/> : <Navigate to="/login"/> }></Route>
-      <Route path="/Addproducts" element={isLogin ? <AddProducts/> : <Navigate to="/login"/> }></Route>
-      <Route path="/Accounts" element={ isLogin ? <Account/> : <Navigate to="/login"/> }></Route>
-      <Route path="/login" element={<Login onLogin={(loginStatus) =>  setIsLogin(loginStatus)}/>}> </Route>
-      <Route path="/dashboard" element={isLogin ? <Dashboard/> : <Navigate to="/login"/>}></Route>
-      <Route path="/products" element={isLogin ? <Products/> : <Navigate to="/login"/>}></Route>
+    <Route path="/Addcategory" element={isLogin ? <AddCategory/> : <Navigate to="/React-Final-Project"/> }></Route>
+      <Route path="/Addproducts" element={isLogin ? <AddProducts/> : <Navigate to="/React-Final-Project"/> }></Route>
+      <Route path="/Accounts" element={ isLogin ? <Account/> : <Navigate to="/React-Final-Project"/> }></Route>
+      <Route path="/React-Final-Project" element={<Login onLogin={(loginStatus) =>  setIsLogin(loginStatus)}/>}> </Route>
+      <Route path="/dashboard" element={isLogin ? <Dashboard/> : <Navigate to="/React-Final-Project"/>}></Route>
+      <Route path="/products" element={isLogin ? <Products/> : <Navigate to="/React-Final-Project"/>}></Route>
     </Routes> 
      <Footer/>
     </div>

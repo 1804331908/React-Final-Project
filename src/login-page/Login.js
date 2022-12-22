@@ -21,7 +21,7 @@ setPassword(pass)
 const submitHandler = (e) => {
     e.preventDefault()
 
-    if(userName == "Admin" && password == "Admin"){
+    if(userName == "admin" && password == "admin"){
         props.onLogin(true)
         Navigate("/dashboard") 
     }
