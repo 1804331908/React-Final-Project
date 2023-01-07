@@ -15,7 +15,8 @@ import axios from 'axios';
 
 function App(){
 
-const [isLogin, setIsLogin]  = useState(false)
+const [isLogin, setIsLogin]  = useState(false);
+const [orders, setOrders] = useState([])
 
 useEffect(() => {
   axios
@@ -23,7 +24,7 @@ useEffect(() => {
     .then((Response) => {
       console.log(Response);
       localStorage.setItem("data", JSON.stringify(Response.data))
-      // setOrders(Response.data.dasbhoardPage.orders);
+      setOrders(Response.data.dasbhoardPage.orders);
     });
 }, []);
 

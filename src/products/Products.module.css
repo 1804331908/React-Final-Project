@@ -122,3 +122,42 @@ tr{
   ::-webkit-scrollbar-thumb:hover {
     background: #7f90a7;
   }
+  @media screen and (max-width: 980px) {
+    .productBox{
+        display: block;
+    }
+    .productDiv{
+        padding: 25px;
+    box-shadow: 1px 1px 5px 0 #455c71;
+    width: 75%;
+    height: 100%;
+    max-height: 450px;
+    min-height: 722px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-left: 30px;
+    }
+    .tableData{
+        padding: 15px 30px;
+    font-size: 12px;
+    }
+    .th{
+        font-size: 12px;
+    }
+    .productCatagDiv{
+        min-height: 417px;
+    background-color: #435c70;
+    padding: 25px;
+    }
+    .tableDiv{
+        max-height: 256px;
+    }
+    .productCatag{
+        width: 87%;
+        margin-left: 31px;
+    }
+    .tableTd{
+        font-size: 14px;
+        padding: 12px 35px;
+    }
+  }

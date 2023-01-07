@@ -132,3 +132,41 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
 }
+@media screen and (max-width: 980px){
+    .mainProductDiv{
+        display: block;
+        width: 76%;
+        height: 853px;
+        padding: 25px;
+    }
+    .addProd{
+        font-size: 16px;
+    margin-top: -12px;
+    }
+    label{
+        font-size: 12px;
+    }
+    .productInput{
+        padding: 15px 18px;
+    width: 250px;
+    }
+    .productDes{
+        padding: 7px 7px;
+    height: 65px;
+    }
+    .selectCat{
+        padding: 2px;
+    background-color: #4e657a;
+    color: #9fabc1;
+    font-size: 16px;
+    }
+    .exStock{
+        display: block;
+    }
+    .prodImg{
+        margin-top: 19px;
+    }
+    .productDetailDiv{
+        display: block;
+    }
+}
